@@ -79,15 +79,13 @@ pip install -r requirements.txt
 ### Build the Docker image
 docker build -t adobe-pdf-parser .
 
-### Run the Docker Container
-docker run --rm adobe-pdf-parser
-
 ### Test with sample data
-docker run --rm \
-  -v $(pwd)/input:/app/input \
-  -v $(pwd)/output:/app/output \
-  --network none \
-  adobepdf1:submission
+docker run --rm ^
+-v "%cd%\input:/app/input" ^
+-v "%cd%\output:/app/output" ^
+--network none ^
+adobe-pdf-parser ^
+--pdf /app/input/sample.pdf
 
 
 ##  Train the Heading Classifier
