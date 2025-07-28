@@ -1,0 +1,8 @@
+pdfminer.six
+scikit-learn
+joblib
+networkx
+matplotlib
+tqdm
+langdetect
+numpy 

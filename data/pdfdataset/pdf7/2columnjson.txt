@@ -1,0 +1,11 @@
+{
+  "title": "Two-column documents in LATEX",
+  "outline": [
+    { "level": "H1", "text": "Introduction", "page": 1 },
+    { "level": "H1", "text": "Two columns", "page": 1 },
+    { "level": "H1", "text": "The abstract", "page": 1 },
+    { "level": "H1", "text": "Figures", "page": 2 },
+    { "level": "H1", "text": "Mathematics", "page": 2 },
+    { "level": "H1", "text": "Another alternative", "page": 3 }
+  ]
+}

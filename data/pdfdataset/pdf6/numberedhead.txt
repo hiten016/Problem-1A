@@ -1,0 +1,26 @@
+{
+  "title": "Global Health Care Policy Wordings",
+  "outline": [
+    { "level": "H1", "text": "SECTION A) PREAMBLE", "page": 1 },
+    { "level": "H1", "text": "SECTION B) DEFINITIONS - STANDARD DEFINITIONS", "page": 1 },
+    { "level": "H2", "text": "1. Accident", "page": 1 },
+    { "level": "H2", "text": "2. Any one Illness", "page": 1 },
+    { "level": "H2", "text": "3. AYUSH Hospital", "page": 1 },
+    { "level": "H2", "text": "4. AYUSH Day Care Centre", "page": 1 },
+    { "level": "H2", "text": "5. Cashless Facility", "page": 2 },
+    { "level": "H2", "text": "6. Condition Precedent", "page": 2 },
+    { "level": "H2", "text": "7. Congenital Anomaly", "page": 2 },
+    { "level": "H2", "text": "8. Co-Payment", "page": 2 },
+    { "level": "H2", "text": "9. Cumulative Bonus", "page": 2 },
+    { "level": "H1", "text": "SECTION B) DEFINITIONS - SPECIFIC DEFINITIONS", "page": 5 },
+    { "level": "H2", "text": "1. Accidental", "page": 5 },
+    { "level": "H2", "text": "2. Act of Terrorism", "page": 5 },
+    { "level": "H2", "text": "3. Bajaj Allianz Network Hospitals", "page": 6 },
+    { "level": "H2", "text": "4. Bajaj Allianz Diagnostic Centre", "page": 6 },
+    { "level": "H1", "text": "SECTION C) BENEFITS COVERED UNDER THE POLICY", "page": 10 },
+    { "level": "H2", "text": "PART A- COVERAGE- Domestic", "page": 10 },
+    { "level": "H2", "text": "PART B- COVERAGE- International", "page": 13 },
+    { "level": "H2", "text": "II. OUT-PATIENT BENEFITS FOR INTERNATIONAL COVER", "page": 18 },
+    { "level": "H2", "text": "III. DENTAL PLAN BENEFITS (Optional)", "page": 18 }
+  ]
+}

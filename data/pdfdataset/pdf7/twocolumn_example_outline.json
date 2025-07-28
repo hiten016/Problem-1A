@@ -1,0 +1,50 @@
+{
+  "title": "twocolumn_example",
+  "outline": [
+    {
+      "level": "H1",
+      "text": "Two-column documents in LATEX",
+      "page": 1
+    },
+    {
+      "level": "H2",
+      "text": "Hugh C. Pumphrey",
+      "page": 1
+    },
+    {
+      "level": "H2",
+      "text": "November 5, 2024",
+      "page": 1
+    },
+    {
+      "level": "H1",
+      "text": "1 Introduction",
+      "page": 1
+    },
+    {
+      "level": "H1",
+      "text": "3 The abstract",
+      "page": 1
+    },
+    {
+      "level": "H1",
+      "text": "2 Two columns",
+      "page": 1
+    },
+    {
+      "level": "H1",
+      "text": "4 Figures",
+      "page": 2
+    },
+    {
+      "level": "H1",
+      "text": "5 Mathematics",
+      "page": 3
+    },
+    {
+      "level": "H1",
+      "text": "6 Another alternative",
+      "page": 3
+    }
+  ]
+}
