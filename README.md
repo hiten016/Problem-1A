@@ -26,6 +26,15 @@ pdf-heading-extractor/
 └── visual_debugger.py           
 
 ```
+## Edge Case Handling
+The PDF Heading extractor works well on the following edge cases. We have added the sample dataset used for testing it all all the following edge cases <br> 
+
+Add detection for  indentation, or all-uppercase, variable font size <br>
+Use positional heuristics (e.g., center-aligned + large + bold = H1). <br>
+Multicolumn pdfs (academic papers, legal documents,reports) <br>
+Multilingual pdfs <br>
+Numbered headings (1,1.1, 1.2)  <br>
+
 ##  Features
 
 - **Comprehensive Heading Detection**  
