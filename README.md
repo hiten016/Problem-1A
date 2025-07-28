@@ -141,7 +141,7 @@ Applies rules (length, font size threshold, punctuation) to clean candidate head
     
 Builds a directed graph using networkx, connecting heading nodes sequentially to represent document flow.
 
-6. Language Detection (Optional)
+6. Language Detection (Bonus Part)
     
 Utilizes langdetect to detect text language, which can be extended for multilingual improvements.
 
