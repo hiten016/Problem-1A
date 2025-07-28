@@ -60,15 +60,21 @@ Numbered headings (1,1.1, 1.2)  <br>
 ```bash
 git clone https://github.com/your-username/pdf-heading-extractor.git
 cd pdf-heading-extractor
+```
 
-# 2. Create and activate a virtual environment (recommended)
+### 2. Create and activate a virtual environment (recommended)
+```bash
 python -m venv venv
 venv\Scripts\activate
-# 3. Install dependencies
+```
 
+### 3. Install dependencies
+
+```bash
 pip install -r requirements.txt
 ```
 ---
+
 ## Docker Setup
 ### Build the Docker image
 docker build --platform linux/amd64 -t pdf-processor .
