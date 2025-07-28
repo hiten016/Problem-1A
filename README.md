@@ -70,14 +70,11 @@ pip install -r requirements.txt
 ```
 ---
 ## Docker Setup
-### Build Docker image
-docker build --platform linux/amd64 -t pdf-analyzer-1b .
+### Build the Docker image
+docker build --platform linux/amd64 -t pdf-processor .
 
-### Run the container on Collection_1
-docker run --rm \
--v $(pwd)/Collection_1:/app/Collection_1:rw \
---network none pdf-analyzer-1b \
-python run_analysis.py Collection_1 --top_k 15
+### Test with sample data
+docker run --rm -v $(pwd)/sample_dataset/pdfs:/app/input:ro -v $(pwd)/sample_dataset/outputs:/app/output --network none pdf-processor
 
 
 ##  Train the Heading Classifier
