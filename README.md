@@ -6,22 +6,44 @@ Multilingual and multicolumn pdfs are also tested through our datastet through r
 ---
 ##  Project Structure
 ```bash
-pdf-heading-extractor/
-│
-├── cluster_headings.py          
-├── constants.py                
-├── extract_features.py         
-├── extract_headings.py         
-├── feature_engineering.py      
-├── header_footer_removal.py     
-├── language_utils.py            
-├── layout_utils.py              
-├── main.py                      
-├── model_utils.py               
-├── requirements.txt             
-├── semantic_graph.py           
-├── train_classifier.py          
-└── visual_debugger.py           
+.
+├── Dockerfile
+├── main.py
+├── README.md
+├── requirements.txt
+├── config
+│   └── constants.py
+├── data
+│   ├── processed/
+│   ├── raw_pdfs/
+│   │   ├── Adobe Round-2 Problem Statement.pdf
+│   │   └── Adobe Round-2 Problem Statement_outline.json
+│   └── samples/
+├── hierarchy
+│   ├── cluster_headings.py
+│   ├── semantic_graph.py
+│   └── __pycache__/
+├── input/
+├── model
+│   ├── heading_classifier.pkl
+│   ├── model_utils.py
+│   ├── train_classifier.py
+│   └── __pycache__/
+├── output/
+├── parser
+│   ├── extract_features.py
+│   ├── extract_headings.py
+│   └── __pycache__/
+├── preprocessor
+│   ├── feature_engineering.py
+│   ├── header_footer_removal.py
+│   └── __pycache__/
+└── utils
+    ├── language_utils.py
+    ├── layout_utils.py
+    ├── visual_debugger.py
+    └── __pycache__/
+       
 
 ```
 
