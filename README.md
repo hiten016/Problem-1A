@@ -44,7 +44,7 @@ pdf-heading-extractor/
 ---
 
 ## Edge Case Handling
-The PDF Heading extractor works well on the following edge cases. We have added the sample dataset used for testing it all on the following edge cases: <br> 
+The PDF Heading extractor works well on the following edge cases. We have added the sample dataset used for testing it on all the following edge cases: <br> 
 
 Add detection for  indentation, or all-uppercase, variable font size <br>
 Use positional heuristics (e.g., center-aligned + large + bold = H1). <br>
