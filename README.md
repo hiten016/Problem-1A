@@ -114,9 +114,6 @@ Builds a directed graph using networkx, connecting heading nodes sequentially to
     
 Utilizes langdetect to detect text language, which can be extended for multilingual improvements.
 
----
-
-
 
 ---
 
@@ -124,6 +121,12 @@ Utilizes langdetect to detect text language, which can be extended for multiling
 
 This project is licensed under the MIT License.
 
+---
+## Contributors: 
+Team Quantum Quarks LNMIIT Jaipur <br>
+Hiten Mahajan <br> 
+Pratyaksh Agrawal <br>
+Sakash Srivastava <br>
 
 
 
