@@ -117,7 +117,7 @@ Builds a directed graph using networkx, connecting heading nodes sequentially to
     
 Utilizes langdetect to detect text language, which can be extended for multilingual improvements.
 
-## Constraints
+## Constraints Satisfied
 
 - **Execution Time**: Must complete processing within **10 seconds** for a **50-page PDF**.
 - **Model Size**: If using a model, its total size must be **≤ 200MB**.
