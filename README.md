@@ -77,7 +77,10 @@ pip install -r requirements.txt
 
 ## Docker Setup
 ### Build the Docker image
-docker build --platform linux/amd64 -t adobepdf1:submission .
+docker build -t adobe-pdf-parser .
+
+### Run the Docker Container
+docker run --rm adobe-pdf-parser
 
 ### Test with sample data
 docker run --rm \
