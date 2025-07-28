@@ -1,7 +1,8 @@
 # Problem-1A - PDF Heading Extractor
 
 An offline tool designed to extract and hierarchically cluster headings from PDF documents, utilizing a combination of **layout**, **visual**, and **linguistic** features.
-
+Expected output is a JSON File with Headings classified as H1, H2 and works on various edge cases like a,b,c type heading,numbered headings, coloured, bold, itlalics, different font based heading.
+Multilingual and multicolumn pdfs are also tested through our datastet through research papers, chemistry textbooks and mathematical papers, legal documents. The model does not detect OCR based headings as described in the problem statement.
 ---
 ##  Project Structure
 ```bash
