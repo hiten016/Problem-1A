@@ -26,14 +26,6 @@ pdf-heading-extractor/
 └── visual_debugger.py           
 
 ```
-## Edge Case Handling
-The PDF Heading extractor works well on the following edge cases. We have added the sample dataset used for testing it all all the following edge cases <br> 
-
-Add detection for  indentation, or all-uppercase, variable font size <br>
-Use positional heuristics (e.g., center-aligned + large + bold = H1). <br>
-Multicolumn pdfs (academic papers, legal documents,reports) <br>
-Multilingual pdfs <br>
-Numbered headings (1,1.1, 1.2)  <br>
 
 ##  Features
 
@@ -53,6 +45,16 @@ Numbered headings (1,1.1, 1.2)  <br>
   Creates semantic connections between extracted headings to enhance document understanding.
 
 ---
+
+## Edge Case Handling
+The PDF Heading extractor works well on the following edge cases. We have added the sample dataset used for testing it all all the following edge cases <br> 
+
+Add detection for  indentation, or all-uppercase, variable font size <br>
+Use positional heuristics (e.g., center-aligned + large + bold = H1). <br>
+Multicolumn pdfs (academic papers, legal documents,reports) <br>
+Multilingual pdfs <br>
+Numbered headings (1,1.1, 1.2)  <br>
+
 
 ##  Installation
 
@@ -90,21 +92,7 @@ You will see accuracy metrics and a confirmation that the trained model has been
 
 ---
 
-##  Usage
-To extract headings from a PDF, run the main script:
-```bash
-python main.py --pdf path/to/your/document.pdf
-```
-Replace path/to/your/document.pdf with the actual path to your PDF.
-
-Desired Output:
-
-A .json file with the document's extracted heading structure will be saved in the same folder.
-
-Detected headings will be printed in the console.
-
----
-## 🔍 How it Works
+##  How it Works
 1. Layout Extraction
    
 Uses pdfminer.six to extract text elements (font size, coordinates, etc.) and organizes them into logical blocks.
