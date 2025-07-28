@@ -6,7 +6,7 @@ Multilingual and multicolumn pdfs are also tested through our datastet through r
 ---
 ##  Project Structure
 ```bash
-.
+adobe1a-master/
 ├── Dockerfile
 ├── main.py
 ├── README.md
