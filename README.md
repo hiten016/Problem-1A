@@ -1,13 +1,32 @@
 # Problem-1A
 PDF Heading output as JSON
 
-# 📄 PDF Heading Extractor
+#  PDF Heading Extractor
 
 An offline tool designed to extract and hierarchically cluster headings from PDF documents, utilizing a combination of **layout**, **visual**, and **linguistic** features.
 
 ---
+##  Project Structure
+```bash
+pdf-heading-extractor/
+│
+├── cluster_headings.py          
+├── constants.py                
+├── extract_features.py         
+├── extract_headings.py         
+├── feature_engineering.py      
+├── header_footer_removal.py     
+├── language_utils.py            
+├── layout_utils.py              
+├── main.py                      
+├── model_utils.py               
+├── requirements.txt             
+├── semantic_graph.py           
+├── train_classifier.py          
+└── visual_debugger.py           
 
-## 🚀 Features
+```
+##  Features
 
 - **Comprehensive Heading Detection**  
   Handles a variety of heading styles, including multi-column layouts, multilingual content, and styled headings (bold, large, indented).
@@ -26,26 +45,34 @@ An offline tool designed to extract and hierarchically cluster headings from PDF
 
 ---
 
-## 🛠️ Installation
+##  Installation
 
 ### 1. Clone the repository
 
 ```bash
 git clone https://github.com/your-username/pdf-heading-extractor.git
 cd pdf-heading-extractor
-```
-### 2. Create and activate a virtual environment (recommended)
-```bash
+
+# 2. Create and activate a virtual environment (recommended)
 python -m venv venv
-source venv/bin/activate        # On Windows: venv\Scripts\activate
-```
-### 3. Install dependencies
-```bash
+venv\Scripts\activate
+# 3. Install dependencies
+
 pip install -r requirements.txt
 ```
 ---
+## Docker Setup
+### Build Docker image
+docker build --platform linux/amd64 -t pdf-analyzer-1b .
 
-## 🧠 Train the Heading Classifier
+### Run the container on Collection_1
+docker run --rm \
+-v $(pwd)/Collection_1:/app/Collection_1:rw \
+--network none pdf-analyzer-1b \
+python run_analysis.py Collection_1 --top_k 15
+
+
+##  Train the Heading Classifier
 This step trains a LightGBM classifier to distinguish headings from regular text using features like font size, boldness, casing, text length, and layout differences.
 ```bash
 python parser/train_classifier.py
@@ -54,14 +81,14 @@ You will see accuracy metrics and a confirmation that the trained model has been
 
 ---
 
-## ⚙️ Usage
+##  Usage
 To extract headings from a PDF, run the main script:
 ```bash
 python main.py --pdf path/to/your/document.pdf
 ```
 Replace path/to/your/document.pdf with the actual path to your PDF.
 
-📝 Output:
+Desired Output:
 
 A .json file with the document's extracted heading structure will be saved in the same folder.
 
@@ -95,26 +122,7 @@ Utilizes langdetect to detect text language, which can be extended for multiling
 
 ---
 
-## 🧾 Project Structure
-```bash
-pdf-heading-extractor/
-│
-├── cluster_headings.py          # DBSCAN-based heading clustering
-├── constants.py                 # Global threshold constants
-├── extract_features.py          # Text and layout element extractor
-├── extract_headings.py          # Heading identification and level assignment
-├── feature_engineering.py       # Feature generator for classifier
-├── header_footer_removal.py     # Optional: Removes repeated headers/footers
-├── language_utils.py            # Text language detection
-├── layout_utils.py              # Heading-likeness helper functions
-├── main.py                      # Main execution script
-├── model_utils.py               # Classifier and graph helpers
-├── requirements.txt             # All dependencies
-├── semantic_graph.py            # Builds semantic heading graph
-├── train_classifier.py          # Trains and saves LightGBM model
-└── visual_debugger.py           # Visualize layout elements for debugging
 
-```
 
 ---
 
