@@ -77,10 +77,14 @@ pip install -r requirements.txt
 
 ## Docker Setup
 ### Build the Docker image
-docker build --platform linux/amd64 -t pdf-processor .
+docker build --platform linux/amd64 -t adobepdf1:submission .
 
 ### Test with sample data
-docker run --rm -v $(pwd)/sample_dataset/pdfs:/app/input:ro -v $(pwd)/sample_dataset/outputs:/app/output --network none pdf-processor
+docker run --rm \
+  -v $(pwd)/input:/app/input \
+  -v $(pwd)/output:/app/output \
+  --network none \
+  adobepdf1:submission
 
 
 ##  Train the Heading Classifier
