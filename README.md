@@ -1,7 +1,4 @@
-# Problem-1A
-PDF Heading output as JSON
-
-#  PDF Heading Extractor
+# Problem-1A - PDF Heading Extractor
 
 An offline tool designed to extract and hierarchically cluster headings from PDF documents, utilizing a combination of **layout**, **visual**, and **linguistic** features.
 
